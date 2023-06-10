@@ -30,7 +30,7 @@ arr.forEach((button) => {
         else if (value === "=") {
             result.value = eval(result.value);
         }
-        else if((value === "0" || value === "00") && result.value.length === 1)
+        else if((value === "0" || value === "00") && (result.value[0] == 0 && result.value.length === 1))
         {
             return;
         }
